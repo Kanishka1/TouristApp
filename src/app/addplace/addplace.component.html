@@ -1,0 +1,14 @@
+<div class="form1" style="margin-left: 25%;">
+  <form (ngSubmit)="onSubmit()">
+    <h3>Enter Tourist Place Details</h3>
+    ID<input type="number" id="id"  placeholder="Enter Tourist Place Id" name="id" [(ngModel)]="place.id">
+    Name<input type="text" id="name"  placeholder="Enter Tourist Place Name" name="name" [(ngModel)]="place.name">
+    Description<input type="text" id="description"  placeholder="Enter Tourist Place Description" name="description" [(ngModel)]="place.description">
+    Location<input type="text" id="location"  placeholder="Enter Tourist Place Location" name="location" [(ngModel)]="place.location">
+    City<input type="text" id="city"  placeholder="Enter Tourist Place City" name="city" [(ngModel)]="place.city">
+    State<input type="text" id="state"  placeholder="Enter Tourist Place State" name="state" [(ngModel)]="place.state">
+    Distance<input type="text" id="distance"  placeholder="Enter Tourist Place Distance" name="distance" [(ngModel)]="place.distance">
+
+      <input type="submit" value="Add Details" id="btn">
+  </form>
+</div>

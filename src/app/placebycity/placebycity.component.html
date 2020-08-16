@@ -1,0 +1,21 @@
+<div class="form-group form1">
+  <label for="city">City</label>
+  <input type="text" class="form-control" #name id="name" aria-describedby="helpId" placeholder="Enter City Name">
+  <button type="button" class="btn btn-primary" (click)="findPlace(name.value)">Find Place</button>
+</div>
+<div class="row">
+    <div class="col-lg-3"  *ngFor="let place of cityList" >
+    <div class="card" style="margin-top: 20px;">
+        <img class="card-img-top" src="../../assets/images/dog-img.jpg" alt="" style="height:200px;">
+        <div class="card-body">
+            <h4 class="card-title">Name: {{place.name}}</h4>
+            <p class="card-text">Description:{{place.description}}</p>
+            <p class="card-text">Location :{{place.location}}</p>
+            <p class="card-text">City:{{place.city}}</p>
+            <p class="card-text">State:{{place.state}}</p>
+            <p class="card-text">Distance:{{place.distance}}</p>
+        </div>
+        </div>
+</div>
+
+</div>
